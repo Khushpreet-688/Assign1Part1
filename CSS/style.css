@@ -120,6 +120,7 @@ img{
 
 
 @media screen and (max-width: 40em) {
+    
     .bodyContainer{
         display: flex;
         flex-direction: column;
