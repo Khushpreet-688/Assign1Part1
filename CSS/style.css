@@ -6,10 +6,10 @@
 font-family: 'Playfair Display', serif;
  */
 
-
 body{
-    background-color: #9ccfd8
+    background-color:#9ccfd8;
 }
+
 .bodyContainer{
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -39,13 +39,13 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
-.mainPart{
+.contact_cards{
     grid-area: body1;
     margin: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, 10rem);
     justify-content: space-evenly;
-    align-content: space-between;
+    align-content: space-evenly;
 }
 
 .item{
@@ -88,15 +88,6 @@ img{
     border-radius: 10%;
 }
 
-.pluses{
-    grid-area: body1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
-    width: 20em;
-    height: 30rem;
-}
 
 .contct_info{
     grid-area: body;
@@ -125,4 +116,28 @@ img{
 .info{
     padding: 10px;
     margin: 5px;
+}
+
+
+@media screen and (max-width: 40em) {
+    .bodyContainer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .heading{
+        width:fit-content;
+    }
+    .editing{
+        width: auto;
+    }
+    .contct_info{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: flex-start;
+    }
+    .name{
+        align-self: flex-start;
+    }
 }
